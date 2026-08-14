@@ -1,0 +1,7 @@
+# Cache de Python
+__pycache__/
+*.pyc
+
+# Configuración de editor
+.vscode/
+.idea/
