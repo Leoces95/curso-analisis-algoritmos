@@ -16,8 +16,10 @@ Dado que es el inicio del curso, las instrucciones de uso del repositorio se rem
 git clone [https://github.com/Leoces95/curso-analisis-algoritmos.git](https://github.com/Leoces95/curso-analisis-algoritmos.git)
 cd curso-analisis-algoritmos
 
-## Datos del Autor
+Autor:
 
-* **Estudiante:** Leonel Antonio Martinez Silgado
-* **Correo:** leocesvives@gmail.com
-* **Celular:** 3043470653
+Estudiante: Leonel Antonio Martinez Silgado
+Correo: leocesvives@gmail.com
+Celular: 3043470653
+semestre: 2026-2
+
