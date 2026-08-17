@@ -4,4 +4,4 @@ __pycache__/
 
 # Configuración de editor
 .vscode/
-.idea/
+.idea/venv/
