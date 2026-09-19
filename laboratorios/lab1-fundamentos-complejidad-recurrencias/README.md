@@ -13,7 +13,7 @@
 Para clonar el repositorio, configurar el entorno de ejecución y reproducir los resultados experimentales y las gráficas:
 
 1. **Clonar el repositorio y acceder a la carpeta del laboratorio:**
-```bash
+
 git clone https://github.com/Leoces95/curso-analisis-algoritmos.git
 cd curso-analisis-algoritmos/laboratorios/lab1-fundamentos-complejidad-recurrencias
 
