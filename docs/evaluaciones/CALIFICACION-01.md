@@ -9,11 +9,11 @@
 |---|---|
 | Corrección conceptual | 19 / 25 |
 | Calidad de la explicación teórica | 22 / 25 |
-| Corrección de la implementación | 15 / 20 |
+| Corrección de la implementación | 16 / 20 |
 | Calidad del análisis de las gráficas | 16 / 20 |
 | Documentación y organización del informe | 5 / 10 |
-| **Total** | **77 / 100** |
-| **Nota (0–5)** | **3.85** |
+| **Total** | **78 / 100** |
+| **Nota (0–5)** | **3.90** |
 
 ## 1. Corrección conceptual (19 / 25)
 **Lo que hizo bien:**
@@ -38,7 +38,7 @@
 - Dice que el escenario C llega "de menor a mayor" y que Tamiza ordena de mayor a menor, pero su código ordena de menor a mayor y su escenario C viene de mayor a menor. Hay que elegir un sentido, declararlo y mantenerlo en todo el informe.
 - La tabla línea a línea de insertion sort no coincide exactamente con las líneas de su código (por ejemplo, el `if` y el `break`).
 
-## 3. Corrección de la implementación (15 / 20)
+## 3. Corrección de la implementación (16 / 20)
 **Lo que hizo bien:**
 - `insertion_sort` y `merge_sort` ordenan bien, no cambian la lista original y cuentan comparaciones entre elementos. No usan `sorted()` ni `sort()`.
 - `merge_sort` tiene su propia mezcla recursiva.
@@ -46,7 +46,6 @@
 
 **Lo que puede mejorar:**
 - Las funciones `ejecutar_experimento_p3` y `ejecutar_experimento_p4` no tienen docstring ni indicación del tipo que devuelven, y las funciones internas de `merge_sort` tampoco tienen docstring.
-- Los archivos terminan sin salto de línea final (detalle de estilo PEP 8).
 - Los algoritmos ordenan de menor a mayor, mientras que Tamiza necesita de mayor a menor; faltó declarar la decisión.
 
 ## 4. Calidad del análisis de las gráficas (16 / 20)
