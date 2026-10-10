@@ -83,7 +83,7 @@ def subarreglo_maximo(
     if inicio == fin:
         return (inicio, fin, valores[inicio])
 
-    medio = (inicio + fin) // 2  # <--- Corregido: división entera entre 2
+    medio = (inicio + fin) // 2 
 
     # Conquistar y dividir: llamadas recursivas y caso cruzado
     i_izq, f_izq, s_izq = subarreglo_maximo(valores, inicio, medio)
