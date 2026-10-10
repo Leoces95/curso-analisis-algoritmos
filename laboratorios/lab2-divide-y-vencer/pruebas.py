@@ -1,6 +1,4 @@
 """Script de pruebas unitarias para validar las soluciones del subarreglo máximo.
-
-Sentido de orden declarado: Ascendente (de izquierda a derecha, índices de 0 a n-1).
 """
 
 import random
