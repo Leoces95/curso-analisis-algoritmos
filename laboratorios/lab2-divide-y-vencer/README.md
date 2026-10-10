@@ -20,8 +20,8 @@ Para verificar y reproducir los experimentos en el entorno de desarrollo local:
 ## Parte 1 — Implementación y Verificación
 
 Los códigos fuente correspondientes a la implementación de los algoritmos y las pruebas unitarias se encuentran en los siguientes enlaces del repositorio:
-* [Enlace a subarreglo.py](./subarreglo.py)
-* [Enlace a pruebas.py](./pruebas.py)
+- [Enlace a subarreglo.py](./subarreglo.py)
+- [Enlace a pruebas.py](./pruebas.py)
 
 **Verificación:**  
 La correctitud de las funciones se validó mediante aserciones (`assert`) en el archivo `pruebas.py`, cubriendo exhaustivamente los siguientes escenarios:
@@ -39,7 +39,7 @@ La correctitud de las funciones se validó mediante aserciones (`assert`) en el 
 El código del experimento de rendimiento se encuentra en el siguiente enlace:
 * [Enlace a medicion.py](./medicion.py)
 
-**Notas sobre la medición:**  El tiempo de ejecución se midió cronometrando únicamente la llamada a las funciones mediante `time.perf_counter()`, aislando por completo la generación de los datos. Para mitigar el ruido del sistema operativo, cada tamaño de entrada (n) se ejecutó promediando 5 repeticiones consecutivas. Se utilizó una semilla fija (`42`) para garantizar la total reproducibilidad de los datos de entrada, asegurando que ambos algoritmos evaluaran exactamente la misma secuencia numérica en cada tamaño.
+**Notas sobre la medición:** El tiempo de ejecución se midió cronometrando únicamente la llamada a las funciones mediante `time.perf_counter()`, aislando por completo la generación de los datos. Para mitigar el ruido del sistema operativo, cada tamaño de entrada (n) se ejecutó promediando 5 repeticiones consecutivas. Se utilizó una semilla fija (`42`) para garantizar la total reproducibilidad de los datos de entrada, asegurando que ambos algoritmos evaluaran exactamente la misma secuencia numérica en cada tamaño.
 
 ![Gráfica de tiempo vs n](./graficas/tiempo_vs_n.png)
 
