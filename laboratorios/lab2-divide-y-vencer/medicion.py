@@ -1,4 +1,4 @@
-"""Script de medición de tiempos de ejecución y generación de gráfica comparativa. """
+"""Script de medición de tiempos de ejecución y generación de gráfica comparativa."""
 
 import os
 import random
@@ -8,10 +8,16 @@ from subarreglo import subarreglo_fuerza_bruta, subarreglo_maximo
 
 
 def medir_tiempos() -> tuple[list[int], list[float], list[float]]:
-    """Mide el tiempo promedio de ejecución para distintos tamaños de entrada n.
+    """Mide el tiempo de ejecución de fuerza bruta y divide y vencerás.
+
+    Args:
+        Ninguno.
 
     Returns:
-        Una tupla con las listas de tamaños, tiempos de fuerza bruta y tiempos de divide y vencerás.
+        tuple[list[int], list[float], list[float]]: Una tupla de tres elementos conteniendo:
+            - tamanios: Lista con los tamaños de entrada evaluados (n).
+            - tiempos_fb: Lista con los tiempos promedio de ejecución de Fuerza Bruta en milisegundos.
+            - tiempos_dyv: Lista con los tiempos promedio de ejecución de Divide y Vencerás en milisegundos.
     """
     tamanios = [10, 50, 100, 500, 1000, 4000, 8000]
     tiempos_fb = []
@@ -23,7 +29,7 @@ def medir_tiempos() -> tuple[list[int], list[float], list[float]]:
         random.seed(semilla_fija)
         datos = [random.randint(-100, 100) for _ in range(n)]
 
-        # Verificación de correctitud interna en cada tamaño
+        # Verificación de correctitud interna en cada tamaño antes de medir
         s_fb = subarreglo_fuerza_bruta(datos)[2]
         s_dyv = subarreglo_maximo(datos, 0, n - 1)[2]
         assert s_fb == s_dyv, f"Error de consistencia matemática en tamaño n={n}"
@@ -49,7 +55,16 @@ def medir_tiempos() -> tuple[list[int], list[float], list[float]]:
 
 
 def generar_grafica(tamanios: list[int], t_fb: list[float], t_dyv: list[float]) -> None:
-    """Genera y guarda la gráfica comparativa de tiempo vs tamaño de entrada."""
+    """Genera y guarda la gráfica comparativa de tiempo vs tamaño de entrada.
+
+    Args:
+        tamanios (list[int]): Tamaños de entrada evaluados.
+        t_fb (list[float]): Tiempos de ejecución de fuerza bruta en milisegundos.
+        t_dyv (list[float]): Tiempos de ejecución de divide y vencerás en milisegundos.
+    
+    Returns:
+        None: Esta función no retorna valores; guarda la gráfica en un archivo PNG.
+    """
     os.makedirs("graficas", exist_ok=True)
 
     plt.figure(figsize=(9, 6))
