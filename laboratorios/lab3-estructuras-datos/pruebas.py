@@ -10,6 +10,7 @@ for guia, estado in ((1000000010, "en bodega"), (1000000024, "en reparto"),
                      (1000000017, "en bodega"), (1000000005, "entregado")):
     lista.insertar(guia, estado)
 assert lista.tamano == 4
+assert lista.cabeza is not None
 assert lista.cabeza.guia == 1000000005  # se inserta al inicio
 assert lista.buscar(1000000024) == "en reparto"
 assert lista.buscar(1000000005) == "entregado"
