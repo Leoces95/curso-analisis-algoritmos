@@ -93,7 +93,7 @@ Como la tabla casi no se distingue en la escala lineal, se agrega la misma infor
 
 ### 1. Costo teórico
 
-En una búsqueda infructuosa (guía inexistente), la lista enlazada no puede detenerse anticipadamente, por lo que debe recorrer de principio a fin los $n$ nodos hasta encontrar None, arrojando un costo de $\Theta(n)$. Por su parte, la tabla hash calcula la casilla en tiempo constante $\Theta(1)$ y luego recorre la lista de esa casilla; definiendo el factor de carga como $\alpha = n / m$ (el largo promedio de cada lista), el costo medio esperado es $\Theta(1 + \alpha)$. Este resultado se sostiene bajo el supuesto de Hashing Uniforme Simple (SUHA), que exige que cada clave tenga la misma probabilidad de caer en cualquier casilla. Si ocurre el caso patológico en el que todas las guías colisionan en una sola casilla, esta acumulará los $n$ nodos y la tabla se degradará a una lista enlazada de costo $\Theta(n)$.
+En una búsqueda de guía inexistente la lista enlazada recorre de principio a fin los $n$ nodos hasta encontrar None, lo cual tiene un costo de $\Theta(n)$. Por su parte, la tabla hash calcula la casilla en tiempo constante $\Theta(1)$ y luego recorre la lista de esa casilla. Definiendo el factor de carga como $\alpha = n/m$, el largo promedio de cada lista, entonces el costo medio esperado $\Theta(1 + \alpha)$. Este resultado se sostiene bajo el supuesto de Hashing Uniforme Simple (SUHA), que exige que cada clave tenga la misma probabilidad de caer en cualquier casilla. Si ocurre el caso patológico en el que todas las guías colisionan en una sola casilla, esta acumulará los $n$ nodos y la tabla se degradará a una lista enlazada de costo $\Theta(n)$.
 
 ### 2. Lo medido contra lo esperado
 
